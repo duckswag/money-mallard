@@ -2,7 +2,7 @@
 
 ![Money Mallard Logo](https://i.ibb.co/hHLRt5x/Mallard.png)
 
-Money Mallard is a Discord bot created extremely quickly extremely poorly. This Bot doesn't even use Slash Commands or Servers, it just tracks messages and returns the info. It would be a **really** bad idea to use this as a template, but I've decided to show the source code. This is a Custom Python Bot made in Replit.
+Money Mallard is a Discord bot created extremely quickly extremely poorly. This Bot doesn't even use Slash Commands or Servers, it just tracks messages and returns the info. It would be a **really** bad idea to use this as a template, but I've decided to show the source code. This is a Custom Python Bot made in Replit. Also, it only runs temporarily for around 10 or so hours per day with lots of breaks and pauses.
 
 
 # PIPs
