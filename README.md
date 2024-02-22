@@ -19,7 +19,7 @@ This uses [Replit's Secrets feature,](https://docs.replit.com/programming-ide/wo
 
 #Links
 
-[Discord Invite](https://discord.com/api/oauth2/authorize?client_id=1207085383800856596&permissions=536955968&scope=bot)
+[Discord Invite](https://discord.com/api/oauth2/authorize?client_id=1207085383800856596&permissions=275414903872&scope=bot)
 
 [Replit](https://replit.com/@theswagduck/Money-Mallard)
 
