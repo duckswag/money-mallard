@@ -16,3 +16,9 @@ I made this code quickly without taking into consider the logic in it, so this m
 # Secrets
 
 This uses [Replit's Secrets feature,](https://docs.replit.com/programming-ide/workspace-features/secrets) which may lead to problems with the bot if you dont add them itself. It should only be the Bot Token and Webhook that gets effected though.
+
+#Links
+
+[Discord Invite](https://discord.com/api/oauth2/authorize?client_id=1207085383800856596&permissions=536955968&scope=bot)
+[Replit](https://replit.com/@theswagduck/Money-Mallard)
+[Github](https://github.com/duckswag/money-mallard/)
