@@ -151,10 +151,12 @@ async def send_message(message: Message, user_message: str, user) -> None:
       sendauth if is_private else await message.channel.send(response, reference=message)
 
   except Exception as e:
-    #e
+    print(e)
 
 #
+
 @client.event
+
 async def on_ready() -> None:
   #print(f'{Client.user} is now running.')
   await client.change_presence(activity=discord.Activity(type=playv, name=presstr))
