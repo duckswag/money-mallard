@@ -24,3 +24,5 @@ This uses [Replit's Secrets feature,](https://docs.replit.com/programming-ide/wo
 [Replit](https://replit.com/@theswagduck/Money-Mallard)
 
 [Github](https://github.com/duckswag/money-mallard/)
+
+[Privacy Policy/Terms Of Service](https://github.com/duckswag/money-mallard/blob/main/privacy-policy-tos.md)
