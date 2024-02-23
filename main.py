@@ -34,9 +34,9 @@ async def send_message(message: Message, user_message: str, user) -> None:
     response: str = get_response(user_message, user)
     if response == "help_embed":
       global embcolor
-      embcolor = 0xff8331
+      embcolor = 0x2c6437
       if random.randint(0, 2) == 1:
-        embcolor = 0x0078ea
+        embcolor = 0xffc300
       stringofemb = "This is the necessary info about the Money Mallard Bot."
       embed=discord.Embed(title="Money Mallard", description=stringofemb, color=embcolor)
       embed.add_field(name=textvar, value=textval, inline=False)
@@ -44,9 +44,9 @@ async def send_message(message: Message, user_message: str, user) -> None:
         await message.author.send(embed=embed)
       sendauth() if is_private else await message.channel.send(embed=embed, reference=message)
     elif response ==  "memes_embed":
-      embcolor = 0xff8331
+      embcolor = 0x2c6437
       if random.randint(0, 2) == 1:
-        embcolor = 0x0078ea
+        embcolor = 0xffc300
       stringofemb = "This is the list of all memes."
 
       #
@@ -79,18 +79,18 @@ async def send_message(message: Message, user_message: str, user) -> None:
       sendauth() if is_private else await message.channel.send(file=discord.File(response + ".jpg"))
       await message.delete()
     elif "feedback_ret" in response:
-        embcolor = 0xff8331
+        embcolor = 0x2c6437
         if random.randint(0, 2) == 1:
-          embcolor = 0x0078ea
+          embcolor = 0xffc300
         embed=discord.Embed(title="Feedback Delivered", description="Thank you for your feedback!", color=embcolor)
         sendfeedback(response[13:], message.author.name, message.author.id)
         async def sendauth():
           await message.author.send(embed=embed)
         sendauth if is_private else await message.channel.send(embed=embed, reference=message)
     elif "vids_embed" in response:
-        embcolor = 0xff8331
+        embcolor = 0x2c6437
         if random.randint(0, 2) == 1:
-          embcolor = 0x0078ea
+          embcolor = 0xffc300
         stringofemb = "**" + textvar + "**" + "\n \n **What videos would you like to see?** \n \n **" + textvar + "**"
         embed=discord.Embed(title="Videos", description=stringofemb, color=embcolor)
         embed.add_field(name="", value="`.vids espn` The ESPN Youtube Channel \n `.vids nba` The official NBA Youtube Channel \n `.vids blrp` The Bleacher Report Youtube Channel \n  `.vids chaz` The Youtube Channel for Chaz NBA \n `.vids flight` NotTheAverageFlight's Youtube Channel (curry4mvps about to flip) \n `.vids jxmy` The Youtube Channel for JxmyHigherroler \n `.vids jess` Jesser's youtube Channel \n `.vids cash` CashNasty's Youtube Channel \n \n **" + textvar + "**", inline=False)
@@ -100,18 +100,18 @@ async def send_message(message: Message, user_message: str, user) -> None:
     elif "ytscr" in response:
         scrdvids = scrapeyoutube(response[6:].lower())
         resstr = response[6:]
-        embcolor = 0xff8331
+        embcolor = 0x2c6437
         if random.randint(0, 2) == 1:
-          embcolor = 0x0078ea
+          embcolor = 0xffc300
         stringofemb = resstr.upper()
         async def sendauth():
           await message.author.send(embed=scrdvids)
         sendauth() if is_private else await message.channel.send(embed=scrdvids, reference=message)
     elif "teams_embed" in response:
         print("what")
-        embcolor = 0xff8331
+        embcolor = 0x2c6437
         if random.randint(0, 2) == 1:
-          embcolor = 0x0078ea
+          embcolor = 0xffc300
         embed=discord.Embed(title="NBA Teams", description="", color=embcolor)
         embed.add_field(name="", value="**" + textvar + "**" + ' \n `.teams fullnames` Ex: **"Detroit Pistons"** \n', inline=False)
         embed.add_field(name="", value='`.teams teamnames` Ex: **"Spurs"** \n', inline=False)
@@ -132,11 +132,16 @@ async def send_message(message: Message, user_message: str, user) -> None:
         choi = random.choice(["🔥", "💯", "👍", "🆗", "🤷‍♂️", "🙅‍♂️", "😅", "🧢", "🤣", "💀"])
         await message.add_reaction(choi)
     elif "info_embed" in response:
-        embcolor = 0xff8331
+        embcolor = 0x2c6437
         if random.randint(0, 2) == 1:
-          embcolor = 0x0078ea
+          embcolor = 0xffc300
         embed=discord.Embed(title="Additional Info", description="", color=embcolor)
-        embed.add_field(name=textvar, value="Made by theswagduck. \n Made with Custom Python \n ", inline=False)
+        embed.add_field(name=textvar, value="Made by [theswagduck](https://github.com/duckswag) \n Made with Custom Python \n [Github](https://github.com/duckswag/money-mallard) \n [Replit](https://replit.com/@theswagduck/Money-Mallard) \n [Invite](https://discord.com/api/oauth2/authorize?client_id=1207085383800856596&permissions=275414903872&scope=bot)", inline=False)
+        embed.add_field(name="", value='**Color Pallete:** \n Green: #ffc300 \n Yellow: #ffc300 \n', inline=True)
+        embed.add_field(name="", value='**Changelog:** \n [Changelog](https://github.com/duckswag/money-mallard/blob/main/CHANGELOG.md) \n', inline=True)
+        embed.add_field(name="", value='**Timespan:** \n May be active around 10AM-12PM EST with temporary breaks. \n', inline=True)
+        embed.add_field(name="**" + textvar + "**", value = "[ᶜˡᶦᶜᵏ ʰᵉʳᵉ](https://discord.com/vanityurl/dotcom/steakpants/flour/flower/index11.html)", inline=False)
+        embed.set_thumbnail(url="https://i.ibb.co/hHLRt5x/Mallard.png")
         async def sendauth():
           await message.author.send(embed=embed)
         sendauth() if is_private else await message.channel.send(embed=embed, reference=message)
@@ -146,12 +151,12 @@ async def send_message(message: Message, user_message: str, user) -> None:
       sendauth if is_private else await message.channel.send(response, reference=message)
 
   except Exception as e:
-    print(e)
+    #e
 
 #
 @client.event
 async def on_ready() -> None:
-  print(f'{Client.user} is now running.')
+  #print(f'{Client.user} is now running.')
   await client.change_presence(activity=discord.Activity(type=playv, name=presstr))
 #
   
@@ -161,7 +166,7 @@ async def on_ready() -> None:
     username: str = str(message.author)
     user_message: str = message.content
     channel: str = str(message.channel)
-    print(f'[{channel}] {username}: "{user_message}"')
+    #print(f'[{channel}] {username}: "{user_message}"')
     user = message.author
     await send_message(message, user_message, user)
 
